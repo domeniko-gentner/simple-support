@@ -1,5 +1,6 @@
 <html lang="de">
     <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css') }}">
     </head>
 <body>
