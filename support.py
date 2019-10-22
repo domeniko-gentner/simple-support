@@ -2,6 +2,8 @@
 from flask import Flask, render_template, request, redirect, url_for
 from support_mail import send_mail
 import wsgiserver
+import cgi
+
 support_app = Flask(__name__)
 
 
@@ -13,10 +15,10 @@ def index():
 @support_app.route('/send-email', methods=['POST'])
 def process_mail():
     if request.method == 'POST':
-        send_mail(request.form['form-employee'],
-                  request.form['form-subject'],
-                  request.form['form-room'],
-                  request.form['form-body'])
+        send_mail(cgi.escape(request.form['form-employee']),
+                  cgi.escape(request.form['form-subject']),
+                  cgi.escape(request.form['form-room']),
+                  cgi.escape(request.form['form-body']))
         return redirect(url_for('index'))
 
 
