@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body{
+    background-color: #1d1e22;
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+textarea,
+input[type=text]{
+    display: block;
+    width: 100%;
+    padding: 1vh;
+    margin-bottom: 2vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input[type=submit]{
+    padding: 1vh;
+    display: block;
+    width: 20ch;
+    font-family: 'Ubuntu', sans-serif;
+}
