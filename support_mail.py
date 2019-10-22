@@ -20,7 +20,6 @@ def get_template(sender: str, subject: str, room: str, body: str):
     mail = mail.replace("subject", subject)
     mail = mail.replace("room", room)
     mail = mail.replace("body", body)
-    print(mail)
     return mail
 
 
