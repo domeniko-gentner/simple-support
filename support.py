@@ -25,5 +25,5 @@ if __name__ == "__main__":
     # support_app.jinja_env.auto_reload = True
     # support_app.config['TEMPLATES_AUTO_RELOAD'] = True
     # support_app.run('10.10.10.1', port=80, debug=True)
-    server = wsgiserver.WSGIServer(support_app, host="WARBOSS", port=80)
+    server = wsgiserver.WSGIServer(support_app, host="0.0.0.0", port=80)
     server.start()
